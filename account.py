@@ -347,8 +347,6 @@ class Account:
             chats_data, last_order_event_tag, last_msg_event_tag,
             buyer_viewing_ids, request, include_runner_context,
         )
-        if self.runner:
-            return self.runner.get_result(payload_data)
         return self.runner_request(payload_data)
 
     # ══════════════════════════════════════════════════════════════════════════
